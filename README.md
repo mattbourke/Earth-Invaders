@@ -16,5 +16,5 @@ Creating own levels
 
 Problems - Solutions.
 ==============
-  1. Close all other tabs / browser windows
+  1. It doesn't work in my browser of choice - use Chrome
   2. Game runs slow - get a new computer
