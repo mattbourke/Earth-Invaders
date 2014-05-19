@@ -2,6 +2,7 @@ Earth-Invaders
 ==============
 
 Experimental Javascript HTML 4 based, Space Invaders Style game.
+A playable version of the game can be found here http://mattbourke.com/#/games
 
 To Run Game.
 ==============
