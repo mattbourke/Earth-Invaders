@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Matt's game</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+<body>
+
+	<div id="stack">
+		<div id="info-row">
+			<div class="score">Score: <span id="result">0</span> - Level <span id="levelStatus">0</span></div>
+		</div>
+	
+		<div id="overlay"><h1 id="status"></h1></div>
+		<div id="board">
+			<script>
+				var board= "";
+				for(var i = 60; i >= 0; i--){
+					board+= "<div data-y='"+i+"' class='line'>";
+						for(var y = 0; y < 76; y++){
+							board+="<div data-x='"+y+"' class='brick'></div>"
+						}
+					board+="</div>"
+				}
+				document.write(board);
+			</script>
+			<input type="button" name="start" id="start" value="start">
+			<input type="button" name="pause" id="pause" value="pause">
+			<input type="button" name="stop"  id="stop"  value="stop" disabled>
+		</div>
+
+	</div>
+	<script src="js/levelsJSON.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/modules/gameModule.js"></script>
+	<script src="js/modules/boardModule.js"></script>
+	<script src="js/boardObjects/invader.js"></script> 
+	<script src="js/boardObjects/laser.js"></script> 
+	<script src="js/boardObjects/defenceGun.js"></script>
+	<script src="js/controller.js"></script>
+	<!-- <script src="js/minified.min.js"></script> -->
+</body>
+
+</html> 

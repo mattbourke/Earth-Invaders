@@ -1,0 +1,71 @@
+body{
+    font-family:arial;
+    color:grey;
+    font-size:18px;
+    background-image:url('../images/bg.jpg');
+}
+
+#stack {
+    width: 382px;
+    height: 392px;
+    margin: 0 auto;
+}
+
+#info-row{
+    position: relative;
+    width: 382px;
+    height:20px;
+    border-style:solid;
+    border-width:1px;
+    border-color: grey;
+
+}
+
+.score{
+    padding-left: 5px;
+}
+
+
+#overlay,
+#board{
+position: absolute;
+
+}
+
+
+#overlay{
+    background:black;
+    color:white;
+    z-index:10;
+    width: 382px;
+    height: 306px;
+}
+
+#status{
+    text-align    : center;
+    vertical-align: middle;
+    line-height   : 255px;
+
+}
+
+.brick {
+    width: 5px;
+    height: 5.5px;
+    background: black;
+    float: left;
+}
+.brick.on {
+    background: red;
+}
+.brick.default {
+    background: black;
+}
+.brick.defenceGun {
+    background: green;
+}
+.brick.invader {
+    background: blue;
+}
+.brick.laser {
+    background: yellow;
+}
